@@ -21,7 +21,7 @@ pipeline {
                 // The 'lastSuccessful()' selector needs to be part of the 'copyArtifacts' call, not a separate method.
                 // The issue was a typo in the previous Jenkinsfile where you used it as a separate step.
                 copyArtifacts(
-                    projectName: 'CIPipeline', // name of your CI job
+                    projectName: 'CI Pipeline', // name of your CI job
                     selector: lastSuccessful()
                 )
             }
